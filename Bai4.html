@@ -6,14 +6,14 @@
 </head>
 <body>
 <script>
-    function check(num){
+    function check_num(a){
         if(isNaN(a)){
             return false
         }
         return true
     }
     let input = +prompt("Nhập 1 số hoặc chữ")
-    document.write(check(num))
+    document.write(`${check_num(input)}`);
 </script>
 </body>
 </html>
