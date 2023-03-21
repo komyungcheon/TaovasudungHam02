@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [5,15];
+  let frist = 0;
+  let last = a.length - 1
+  while (frist < last){
+      let b = a[frist];
+      a[frist] = a[last];
+      a[last] = b
+      frist ++
+      last --
+  }
+  document.write(a);
+</script>
+</body>
+</html>

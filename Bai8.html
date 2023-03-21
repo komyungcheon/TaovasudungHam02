@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function daoNguocMang(arr) {
+    for (let i = 0; i < arr.length / 2; i++) {
+      let temp = arr[i];
+      arr[i] = arr[arr.length - 1 - i];
+      arr[arr.length - 1 - i] = temp;
+    }
+    return arr;
+  }
+
+  let arr = [1, 2, 3, 4, 5];
+  console.log(daoNguocMang(arr));
+
+</script>
+</body>
+</html>
